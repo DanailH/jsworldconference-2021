@@ -11,7 +11,7 @@ export const TabContent = React.memo(function TabContent(props) {
 
   if (state === null) return;
 
-  if (value === state.activeTab) return null;
+  if (value !== state.activeTab) return null;
 
   return (
     <div className={props.className}>

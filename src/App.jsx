@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {
   Tabs,
-  TabsProvider ,
+  TabsProvider,
   TabHeader,
   TabContent
 } from './components/Tabs';
@@ -13,35 +13,35 @@ function App() {
       <h1 className="mb-60">Tabs demo</h1>
 
       <h2>Default demo</h2>
-      <Tabs className="mb-40" defaultTab="Gator">
-        <div label="Gator">
-          See ya later, <em>Alligator</em>!
+      <Tabs className="mb-40" defaultTab="one">
+        <div label="one">
+          This is tab <em>ONE</em>!
         </div>
-        <div label="Croc">
-          After 'while, <em>Crocodile</em>!
+        <div label="two">
+          This is tab <em>TWO</em>!
         </div>
-        <div label="Sarcosuchus">
-          Nothing to see here, this tab is <em>extinct</em>!
+        <div label="three">
+          This is tab <em>THREE</em>!
         </div>
       </Tabs>
 
       <h2>Context demo</h2>
-      <TabsProvider value="Gator">
+      <TabsProvider value="one">
         <div className="tabs">
           <div className="tab-list">
-            <TabHeader value="Gator">
-              Gator
+            <TabHeader value="one">
+              one
             </TabHeader>
-            <TabHeader value="Croc">
-              Croc
+            <TabHeader value="two">
+              two
             </TabHeader>
           </div>
           <div className="tab-content">
-            <TabContent value="Gator">
-              See ya later, <em>Alligator</em>!
+            <TabContent value="one">
+              This is tab <em>ONE</em>!
             </TabContent>
-            <TabContent value="Croc">
-              After 'while, <em>Crocodile</em>!
+            <TabContent value="two">
+              This is tab <em>TWO</em>!
             </TabContent>
           </div>
         </div>
